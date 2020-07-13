@@ -2,7 +2,7 @@ class ScrapeGot::CLI
   def run
     system("clear")
     greeting
-    puts "Please choose an option: "
+    puts "___________________________\nPlease choose an option: "
     @user_input = nil
     menu
     while @user_input != "exit"

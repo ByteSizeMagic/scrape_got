@@ -3,5 +3,3 @@
 require_relative "../lib/scrape_got.rb"
 
 ScrapeGot::CLI.new.run
-
-puts "hello from bin"
