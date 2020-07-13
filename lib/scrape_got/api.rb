@@ -1,0 +1,3 @@
+class ScrapeGot::API
+
+end
