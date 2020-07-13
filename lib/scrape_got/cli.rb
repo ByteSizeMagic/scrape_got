@@ -22,7 +22,7 @@ class ScrapeGot::CLI
   end
 
   def greeting 
-    puts "Welcome to I scrape and I know things!"
+    puts "   ... Welcome to ... \nI scrape and I know things!\n   "
     
   end
 
