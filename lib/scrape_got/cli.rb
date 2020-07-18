@@ -14,7 +14,9 @@ module ScrapeGot
             print_books
             display_menu_message
           elsif @user_input == "2"
-            puts "You chose 2"
+            puts "List Houses:"
+            print_houses
+            display_menu_message
           else
             display_menu_message
           end
@@ -30,7 +32,7 @@ module ScrapeGot
     def menu 
       puts <<-MENU
       1. List Books
-      2. To see next page of articles.
+      2. List Houses
       Enter 'exit' to exit program.
       MENU
     end
@@ -42,6 +44,16 @@ module ScrapeGot
     def print_books
       Info.all_books.each.with_index(1) do |book, index|
         puts "Book #{index}: #{book.name}, released: #{book.released}"
+      end
+    end
+
+    def print_houses
+      Info.all_houses.each.with_index(1) do |house, index|
+        puts "#{index} #{house.name}: #{house.words}"
+        puts "Coat of Arms: #{house.coat}"
+        puts "Region: #{house.region}"
+        puts "--------------------------------------------------------------------"
+        
       end
     end
     
