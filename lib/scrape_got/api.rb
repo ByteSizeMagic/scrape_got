@@ -22,10 +22,10 @@ module ScrapeGot
     #   @data = JSON.parse(body)
     # end
     
-    # def get_houses
-    #   response = HTTParty.get("https://www.anapioficeandfire.com/api/houses?page=1&pageSize=50")
-    #   body = response.body
-    #   @data = JSON.parse(body)
-    # end
+    def self.get_houses
+      response = HTTParty.get("https://www.anapioficeandfire.com/api/houses?page=1&pageSize=50")
+      body = response.body
+      @data = JSON.parse(body)
+    end
   end
 end
