@@ -1,3 +1,5 @@
+lib = File.expand_path("lib", __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require_relative 'lib/scrape_got/version'
 
 Gem::Specification.new do |spec|
@@ -29,4 +31,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "pry"
   spec.add_development_dependency "gem-release"
+  spec.add_development_dependency "httparty"
 end
