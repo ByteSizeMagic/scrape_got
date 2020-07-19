@@ -1,6 +1,6 @@
 module ScrapeGot
   class Houses
-    
+  
     attr_accessor :name, :coat, :region, :words
 
 
@@ -21,5 +21,14 @@ module ScrapeGot
       @words = attributes["words"]
     end
     
+    def self.print_houses
+      Houses.all_houses.each.with_index(1) do |house, index|
+        puts "#{index} #{house.name}: #{house.words}"
+        puts "Coat of Arms: #{house.coat}"
+        puts "Region: #{house.region}"
+        puts "-----------------------------------".colorize(:light_yellow)
+      end
+    end
+
   end
 end
