@@ -5,7 +5,8 @@ module ScrapeGot
     def run
       system("clear")
       greeting
-      Info.all_books
+      Books.all_books
+      Houses.all_houses
       puts "___________________________________\n".colorize(:light_yellow)
       puts "Please choose an option: "
       @user_input = nil
@@ -45,13 +46,13 @@ module ScrapeGot
     end
 
     def print_books
-      Info.all_books.each.with_index(1) do |book, index|
+      Books.all_books.each.with_index(1) do |book, index|
         puts "Book #{index}: #{book.name}, released: #{book.released}"
       end
     end
 
     def print_houses
-      Info.all_houses.each.with_index(1) do |house, index|
+      Houses.all_houses.each.with_index(1) do |house, index|
         puts "#{index} #{house.name}: #{house.words}"
         puts "Coat of Arms: #{house.coat}"
         puts "Region: #{house.region}"
