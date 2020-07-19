@@ -19,5 +19,12 @@ module ScrapeGot
       @number_of_pages = attributes["numberOfPages"]
       @released = attributes["released"]
     end
+
+    def self.print_books
+      Books.all_books.each.with_index(1) do |book, index|
+        puts "Book #{index}: #{book.name}, released: #{book.released}"
+      end
+    end
+
   end
 end
