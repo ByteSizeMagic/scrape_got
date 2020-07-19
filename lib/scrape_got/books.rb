@@ -17,8 +17,7 @@ module ScrapeGot
     def initialize(attributes = {})
       @name = attributes["name"]
       @number_of_pages = attributes["numberOfPages"]
-      @released = attributes["released"]#.strftime("Released on %m/%d/%Y")
+      @released = attributes["released"]
     end
-    
   end
 end
