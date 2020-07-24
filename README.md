@@ -1,8 +1,8 @@
 # ScrapeGot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/scrape_got`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to Scrape_Got, I scrape and I know things! 
 
-TODO: Delete this and the text above, and describe your gem
+I'm a current student at the [Flatiron School](https://flatironschool.com/) and this is my CLI Project. This CLI gem scrapes data from [An API of Ice and Fire](https://anapioficeandfire.com/). It displays a simple menu to the user and gives them a choice of seeing all the books or 20 houses. This was a fun learning experience and I hope to flesh it out further as my knowledge improves. :P
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Once the gem is installed enter 'scrape_got' into the command line to start Scrape_Got. The user will be presented with options to follow on screen.
 
 ## Development
 
@@ -32,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/scrape_got.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ByteSizeMagic/scrape_got.
 
 
 ## License
